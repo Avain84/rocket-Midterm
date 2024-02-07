@@ -1,0 +1,19 @@
+.footer {
+  padding: 64px 0;
+  background-color: $black;
+  color: $white;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .txt {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 500;
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+}

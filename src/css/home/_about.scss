@@ -1,0 +1,98 @@
+.about {
+  color: $black;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: $white;
+    padding: 56px 0;
+
+    max-width: 412px;
+    @include mobile {
+      padding: 40px 0;
+      max-width: 350px;
+    }
+  }
+  h2 {
+    margin-bottom: 40px;
+    @include mobile {
+      margin-bottom: 32px;
+    }
+  }
+  img {
+    max-width: 93%;
+    margin-bottom: 20px;
+    &:hover {
+      border-radius: 100px;
+      border: 5px double $red;
+      transition: 0.8s;
+    }
+  }
+}
+.info {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.75;
+  font-weight: 700;
+  position: relative;
+  @include mobile {
+    font-size: 20px;
+  }
+  &::after {
+    content: "";
+    width: 93%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    background-color: $black;
+  }
+  .name {
+    margin-bottom: 4px;
+  }
+  .birth {
+    margin-bottom: 8px;
+  }
+  .education {
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+}
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+
+  margin-top: 28px;
+
+  font-size: 24px;
+  line-height: 1.725;
+  font-weight: 700;
+  @include mobile {
+    font-size: 20px;
+  }
+  li {
+    margin-left: 38px;
+    position: relative;
+    &::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $red;
+      position: absolute;
+      left: -38px;
+      top: calc(50% - 10px);
+    }
+    &:hover {
+      background-color: $red;
+      color: $white;
+      padding: 0 5px;
+      transition: 0.5s;
+    }
+  }
+}

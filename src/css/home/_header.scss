@@ -1,0 +1,65 @@
+.header {
+  border: 1px solid $gray;
+  height: 958px;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./../img/banner.png) center center / auto 100% no-repeat;
+  @include pad {
+    height: 100vw;
+  }
+  .container {
+    max-width: 304px;
+  }
+  p {
+    margin-bottom: 40px;
+    padding: 0 10px;
+    font-size: 24px;
+    @include mobile {
+      font-size: 20px;
+      margin-bottom: 24px;
+    }
+  }
+}
+h1 {
+  margin-bottom: 32px;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 1.325;
+  text-align: center;
+  @include pad {
+    font-size: 64px;
+    margin-bottom: 24px;
+  }
+  @include mobile {
+    font-size: 48px;
+  }
+  span {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.75;
+    text-align: left;
+  }
+}
+.iconfinder {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  a {
+    width: 60px;
+    @include pad {
+      width: 50px;
+    }
+    @include mobile {
+      width: 40px;
+    }
+  }
+  a:hover {
+    img {
+      transition: 0.5s;
+      transform: scale(0.7);
+    }
+  }
+}
