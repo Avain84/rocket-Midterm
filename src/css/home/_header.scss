@@ -1,16 +1,16 @@
 .header {
-  border: 1px solid $gray;
   height: 958px;
   color: $white;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(./../img/banner.png) center center / auto 100% no-repeat;
+  background: url(./../img/banner.png) center center / cover no-repeat;
   @include pad {
     height: 100vw;
   }
-  .container {
+  .wrap {
     max-width: 304px;
+    padding: 0;
   }
   p {
     margin-bottom: 40px;

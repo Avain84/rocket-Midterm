@@ -1,18 +1,18 @@
 .works {
-  background-color: $white;
-  color: $black;
   padding-bottom: 144px;
   .txt {
     padding: 56px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 16px;
     @include pad {
       padding: 40px 0;
       gap: 8px;
     }
+    h2{
+      text-align: center;
+      margin-bottom: 16px;
+    }
     p {
+      text-align: center;
       font-size: 20px;
       line-height: 1.5;
       font-weight: 500;
